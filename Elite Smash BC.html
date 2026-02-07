@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Smash BC | Badminton Club</title>
+    <style>
+        /* Basic Styles */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; line-height: 1.6; color: #333; }
+        header { background: #1a1a1a; color: #fff; padding: 1rem 0; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav { display: flex; justify-content: space-around; align-items: center; max-width: 1200px; margin: auto; }
+        nav a { color: white; text-decoration: none; font-weight: bold; text-transform: uppercase; font-size: 0.9rem; }
+        
+        /* Hero Section */
+        .hero { 
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1626224580175-340ad0e3a731?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover; height: 80vh; display: flex; align-items: center; 
+            justify-content: center; color: white; text-align: center; margin-top: 50px;
+        }
+        .hero h1 { font-size: 4rem; margin-bottom: 0.5rem; color: #f1c40f; }
+        .btn { background: #f1c40f; padding: 10px 20px; color: black; text-decoration: none; border-radius: 5px; font-weight: bold; }
+
+        /* Sections */
+        section { padding: 4rem 2rem; max-width: 1000px; margin: auto; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+        .card { border: 1px solid #ddd; padding: 1.5rem; border-radius: 10px; text-align: center; }
+        footer { background: #1a1a1a; color: white; text-align: center; padding: 2rem 0; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div style="font-size: 1.5rem;">ELITE SMASH BC</div>
+            <div>
+                <a href="#about">About</a>&nbsp;&nbsp;
+                <a href="#sessions">Sessions</a>&nbsp;&nbsp;
+                <a href="#contact">Join Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h1>Master the Court</h1>
+            <p>Professional Training & Social Badminton for All Levels</p><br>
+            <a href="#contact" class="btn">JOIN THE CLUB</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 style="text-align:center">Why Elite Smash?</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Expert Coaching</h3>
+                <p>Improve your footwork and smash technique with our certified coaches.</p>
+            </div>
+            <div class="card">
+                <h3>Social Play</h3>
+                <p>Meet new friends and enjoy competitive games every weekend.</p>
+            </div>
+            <div class="card">
+                <h3>All Skill Levels</h3>
+                <p>From beginners to advanced tournament players, everyone is welcome.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sessions" style="background: #f9f9f9;">
+        <h2 style="text-align:center">Training Schedule</h2>
+        <table style="width:100%; border-collapse: collapse;">
+            <tr style="background:#eee;">
+                <th style="padding:10px; border:1px solid #ddd;">Day</th>
+                <th style="padding:10px; border:1px solid #ddd;">Time</th>
+                <th style="padding:10px; border:1px solid #ddd;">Level</th>
+            </tr>
+            <tr>
+                <td style="padding:10px; border:1px solid #ddd;">Wednesday</td>
+                <td style="padding:10px; border:1px solid #ddd;">7:00 PM - 9:00 PM</td>
+                <td style="padding:10px; border:1px solid #ddd;">Intermediate</td>
+            </tr>
+            <tr>
+                <td style="padding:10px; border:1px solid #ddd;">Saturday</td>
+                <td style="padding:10px; border:1px solid #ddd;">10:00 AM - 12:00 PM</td>
+                <td style="padding:10px; border:1px solid #ddd;">Open Session</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="contact">
+        <h2 style="text-align:center">Ready to Smash?</h2>
+        <p style="text-align:center">Contact us at <strong>info@elitesmashbc.com</strong> or visit us at the City Sports Center.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Elite Smash BC. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
